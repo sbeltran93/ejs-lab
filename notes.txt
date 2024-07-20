@@ -1,0 +1,21 @@
+app.get('/:restId', (req, res) => {
+    const index = req.params.RESTAURANT;
+    res.render('home.ejs', {
+        RESTAURANT: RESTAURANT[index]
+    })
+})
+
+
+
+    <% RESTAURANT.forEach((index, info) => { %>
+         <a href="/<%= RESTAURANT %>">
+            <li><%= name %>: <%= address %>: <%= phone %></li>
+        </a>
+    <% }) %>
+
+    app.get('/:menuItems', (req, res) => {
+    const index = req.params.menu
+    res.render('menu.ejs', {
+        
+    })
+})

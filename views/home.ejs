@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <%- include('./partials/nav') %>
+
+  <h1> <%= info.name %></h1>
+  <li>
+    <a href="/<%= info %>"></a>
+      <ul><%= info.address %>: <%= info.phone %></ul>
+      <% let isOpen = true; %>
+      <% if (isOpen) { %>
+        <p>Yes we're open!</p>
+      <% } else { %>
+       <p>Sorry we're closed.</p>
+      <% } %>
+    </a>
+  </li>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%- include('./partials/nav') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1><%= category.charAt(0).toUpperCase() + category.slice(1) %></h1>
+</head>
+<body>
+    <li><% menuItems.forEach(item => { %>
+        <ul>Course: <%= item.name %></ul>
+        <ul>Price: $ <%= item.price %></ul>
+        <ul>Rating: <%= item.rating %></ul>
+        <ul>Description: <%= item.details %></ul>
+     
+    <% }) %></li>
+</body>
+</html>
